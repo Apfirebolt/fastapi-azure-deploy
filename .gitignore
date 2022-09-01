@@ -21,6 +21,10 @@ wheels/
 *.manifest 
 *.spec 
 
+# React
+node_modules/
+package-lock.json
+
 # Log files
 pip-log.txt
 pip-delete-this-directory.txt
