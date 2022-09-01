@@ -6,5 +6,5 @@ app = FastAPI()
 @app.get("/")
 async def welcome():
     return {
-        "message": "Hello World James"
+        "message": "Hello World Small Change trigger James"
     }
