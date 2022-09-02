@@ -7,6 +7,8 @@ class Account(BaseModel):
     username: constr(min_length=2, max_length=50)
     email: EmailStr
     password: str
+    firstName: Optional[str]
+    lastName: Optional[str]
 
 
 class DisplayAccount(BaseModel):
