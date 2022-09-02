@@ -14,7 +14,6 @@ templates = Jinja2Templates(directory="client/build")
 
 @app.on_event("startup")
 async def startup():
-    db.create_all()
     print('Started now, db')
 
 
