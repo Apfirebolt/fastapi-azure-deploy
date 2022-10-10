@@ -11,14 +11,9 @@ app.mount("/static", StaticFiles(directory="client/build/static"), name="static"
 
 templates = Jinja2Templates(directory="client/build")
 
-@app.on_event("startup")
-async def startup():
-    print('Started now, db')
-
-
-@app.on_event("shutdown")
-async def shutdown():
-    print('ended now db')
+@app.get("/about")
+async def not_timed():
+    return {"message": "Added about message"}
 
 @app.get("/{full_path:path}")
 async def serve_react_app(request: Request, full_path: str):
