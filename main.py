@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="client/build")
 
 @app.get("/about")
 async def not_timed():
-    return {"message": "Added about message"}
+    return {"message": "Added about message - January 2022"}
 
 @app.get("/{full_path:path}")
 async def serve_react_app(request: Request, full_path: str):

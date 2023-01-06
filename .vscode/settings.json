@@ -1,3 +1,4 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.pythonPath": "c:\\Amit\\Projects\\Fast API\\fastapi-azure-deploy\\venv\\Scripts\\python.exe"
 }
