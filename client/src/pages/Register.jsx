@@ -67,7 +67,7 @@ function Register() {
     <>
       <section className='heading'>
         <h1>
-          <FaUser /> Register
+          <FaUser /> Register Text Changed
         </h1>
       </section>
 
